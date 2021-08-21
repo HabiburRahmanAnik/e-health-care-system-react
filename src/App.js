@@ -25,6 +25,29 @@ import CheckReport from "./components/CheckReport";
 import UpdatePatientDate from "./components/UpdatePatientDate";
 import SearchCourse from "./components/SearchCourse";
 
+import dashboard from "./components/dashboard";
+import PatientDiscount from "./components/PatientDiscount";
+import PatientInfo from "./components/PatientInfo";
+import ViewDoctorSche from "./components/ViewDoctorSche";
+import UploadPhoto from "./components/UploadPhoto";
+import ChangePass from "./components/ChangePass";
+import Emergency from "./components/Emergency";
+import Room from "./components/Room";
+import Transactions from "./components/Transactions";
+import editprofile from "./components/editprofile";
+import PatientBill from "./components/PatientBill";
+import review from "./components/review";
+import Search from "./components/Search";
+import login from "./components/login";
+import chatbox from "./components/chatbox";
+import condoctor from "./components/condoctor";
+import conpatient from "./components/conpatient";
+import SearchDoctor from "./components/SearchDoctor";
+import SearchPatient from "./components/SearchPatient";
+
+//Patient
+//import './App.css';
+import Register from './components/Register'
 
 
 function App() {
@@ -72,6 +95,32 @@ function App() {
         <Route exact path="/UpdatePatientDate/:id" component={UpdatePatientDate}/>
 
         <Route exact path="/SearchCourse" component={SearchCourse}/>
+        {/* //recep */}
+        <Route exact path="/dashboard" component={dashboard} />
+          <Route exact path="/PatientDiscount" component={PatientDiscount} />
+          <Route exact path="/DoctorDashboard" component={DoctorDashboard} />
+          <Route exact path="/PatientInfo" component={PatientInfo} />
+          <Route exact path="/ViewDoctorSche" component={ViewDoctorSche} />
+          <Route exact path="/ChangePass" component={ChangePass} />
+          <Route exact path="/Search" component={Search} />
+          <Route exact path="/login" component={login} />
+          <Route exact path="/SearchDoctor" component={SearchDoctor} />
+          <Route exact path="/SearchPatient" component={SearchPatient} />
+          <Route exact path="/Emergency" component={Emergency} />
+          <Route exact path="/Room" component={Room} />
+          <Route exact path="/condoctor" component={condoctor} />
+          <Route exact path="/conpatient" component={conpatient} />
+          <Route exact path="/chatbox" component={chatbox} />
+          <Route exact path="/Transactions" component={Transactions} />
+          <Route exact path="/editprofile" component={editprofile} />
+          <Route exact path="/PatientBill" component={PatientBill} />
+          <Route exact path="/UploadPhoto" component={UploadPhoto} />
+          <Route exact path="/DoctorInformation" component={DoctorInformation} />
+          <Route exact path="/review" component={review} />
+
+          {/* Patient */}
+          <Route path="/Register"/>
+
       </Switch>
     </>
   )
