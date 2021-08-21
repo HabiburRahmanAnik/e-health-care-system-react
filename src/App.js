@@ -6,6 +6,8 @@ import AdminRouteLink from './components/pages/AdminRouteLink';
 import AdminNavigation from './components/Layout/AdminNavigation';
 import AuthContext from './components/context/auth-context';
 import Login from './components/pages/Login';
+
+
 import DoctorProfile from "./components/DoctorProfile";
 import ImmediateTreatment from "./components/ImmediateTreatment";
 import DoctorDashboard from "./components/DoctorDashboard";
@@ -38,7 +40,6 @@ import editprofile from "./components/editprofile";
 import PatientBill from "./components/PatientBill";
 import review from "./components/review";
 import Search from "./components/Search";
-import login from "./components/login";
 import chatbox from "./components/chatbox";
 import condoctor from "./components/condoctor";
 import conpatient from "./components/conpatient";
@@ -103,7 +104,6 @@ function App() {
           <Route exact path="/ViewDoctorSche" component={ViewDoctorSche} />
           <Route exact path="/ChangePass" component={ChangePass} />
           <Route exact path="/Search" component={Search} />
-          <Route exact path="/login" component={login} />
           <Route exact path="/SearchDoctor" component={SearchDoctor} />
           <Route exact path="/SearchPatient" component={SearchPatient} />
           <Route exact path="/Emergency" component={Emergency} />
